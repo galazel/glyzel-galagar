@@ -6,15 +6,15 @@
 body
 {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;   
 }
-.about {
+.home {
     background: radial-gradient(circle, rgba(250,242,248,1) 0%, rgba(81,116,166,1) 100%);
     background-size: 200% 200%;
     background-position: 0% 50%;
     height: 97vh;
     animation: gradient-animation 5s ease infinite;
+    margin-bottom: 0;
 }
 
 @keyframes gradient-animation {
@@ -44,26 +44,37 @@ header
 }
 .about-me
 {
-  margin: 10px;
-  justify-items: center;
-}
+   margin: 100px 0px 100px 0px ;
+   justify-items: center;
+
+  }
+
 .about-me-container
 {
-  margin: 100px;
   display: grid;
   grid-template-columns: 500px 400px;
   gap: 100px;
   justify-content: center;
 }
+
 .description
 {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+.projects, .skills, #research, #contact, #footer
+{
+  margin: 0;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(250, 245, 245, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+}
+
+
 .projects
 {
-  margin: 100px;
+  padding: 0;
   justify-items: center;
 }
 .projects-item-title
@@ -82,6 +93,7 @@ header
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 100px;
+  padding-bottom: 100px;
 }
 .card-project
 {
@@ -107,7 +119,6 @@ header
 }
 .skills
 {
-    margin: 100px;
   justify-items: center;
 }
 .card-title, card-text
@@ -156,3 +167,79 @@ header
   font-size: 1.1rem;
   line-height: 1.7;
 }
+button.btn {
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button.btn:hover {
+  background-color: #0056b3;
+}
+.contact
+{
+  text-align: center;
+}
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.half-width {
+  flex: 1 1 48%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+}
+
+button.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3;
+}
+

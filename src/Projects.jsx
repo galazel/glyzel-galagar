@@ -4,7 +4,7 @@ import projects_file from "./json/projects.json";
 function Projects() 
 {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects-container">
             <div className="projects-item-title">
                 <h1 className="mt-5 display-4" >Projects</h1>

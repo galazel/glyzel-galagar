@@ -1,6 +1,6 @@
 function Skills() {
   return (
-      <section className="skills py-5">
+      <section className="skills py-5" id="skills">
       <div className="container text-center">
         <h1 className="mt-5 display-4">My Skills</h1>
         <div className="row justify-content-center">
@@ -23,6 +23,7 @@ function Skills() {
             <h2>Frameworks</h2>
             <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
               <img src="/src/assets/images/bootstrap.png" alt="Bootstrap" title="Bootstrap" data-bs-toggle="tooltip" />
+              <img src="/src/assets/images/mui.png" alt="MUI" title="MUI" data-bs-toggle="tooltip" />
               <img src="/src/assets/images/react.png" alt="React" title="React.js" data-bs-toggle="tooltip" />
               <img src="/src/assets/images/springboot.png" alt="Spring Boot" title="Spring Boot" data-bs-toggle="tooltip" />
             </div>
@@ -40,7 +41,7 @@ function Skills() {
           </div>
 
           {/* Soft Skills */}
-          <div className="col-md-10 mt-5">
+          <div className="col-md-10 mt-5 mb-5">
             <h2>Soft Skills</h2>
             <div className="d-flex flex-wrap justify-content-center gap-4 mt-3">
               <div className="soft-skill-card" title="I can clearly express ideas" data-bs-toggle="tooltip">

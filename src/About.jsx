@@ -1,9 +1,9 @@
 function About() {
   return (
-    <section className="about-me">
+    <section className="about-me" id="about">
       <div className="about-me-container">
         <div className="about-item description">
-          <h1 className="mt-5 display-4">About Me</h1>
+          <h1 className="mt-5 display-4 pt-5">About Me</h1>
           <p>
             I am currently studying 
             <b> Bachelor of Science in Information Technology</b> from University
@@ -20,4 +20,4 @@ function About() {
     </section>
   );
 }
-export default About;
+export default About;  
