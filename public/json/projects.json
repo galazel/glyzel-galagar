@@ -1,0 +1,23 @@
+[
+    {
+        "image":"src/assets/images/ethereal_vision.png",
+        "title":"Ethereal Vision",
+        "description":"A website where people can buy and sell art online.",
+        "technology":["src/assets/images/html-5.png","src/assets/images/css-3.png","src/assets/images/js.png"],
+        "video":"src/assets/images/videos/ethereal-vision.mp4"
+    },
+    {
+        "image":"src/assets/images/artstreampng.png",
+        "title":"ArtStream",
+        "description":"A website where people can ask for commissions from the artists",
+        "technology":["src/assets/images/java.png"],
+        "video":"src/assets/images/videos/artstream_video.mp4"
+    },
+    {
+        "image":"src/assets/images/election_system.png",
+        "title":"Election System",
+        "description":"A windows application for voting new officers in Nursing Department",
+        "technology":["src/assets/images/c-sharp.png","src/assets/images/sql.png"],
+        "video":"src/assets/images/videos/voting_system.mp4"
+    }
+]
