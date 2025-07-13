@@ -1,4 +1,33 @@
-function Contact() {
+
+import Loading from "./Loading"
+import {useEffect, useState} from "react";
+import ContactSuccess from "./ContactSuccess";
+function Contact() 
+{
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const form = new FormData(event.target);
+    setLoading(true);
+    const lol = await fetch("http://localhost:8080/contact/send", {
+      method: "POST",
+      body: form,
+    }).then((response) => {
+      setLoading(false);
+      if (response.ok) {
+        setSuccess(true)
+        event.target.reset();
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    }).catch((error) => {
+      setLoading(false);
+      console.error("Error sending message:", error);
+      alert("An error occurred while sending your message. Please try again later.");
+    });     
+  }
   return (
     <section className="contact" id="contact">
       <div className="contact-container">
@@ -9,11 +38,12 @@ function Contact() {
         </div>
 
         {/* Contact Form */}
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           {/* Name Fields */}
           <div className="form-row">
             <div className="form-group half-width">
               <input
+                name="firstName"
                 type="text"
                 id="firstName"
                 placeholder="First name"
@@ -22,6 +52,7 @@ function Contact() {
             </div>
             <div className="form-group half-width">
               <input
+                name="lastName"
                 type="text"
                 id="lastName"
                 placeholder="Last name"
@@ -34,6 +65,7 @@ function Contact() {
           <div className="form-row">
             <div className="form-group half-width">
               <input
+                name="email"
                 type="email"
                 id="email"
                 placeholder="Enter your email"
@@ -42,6 +74,7 @@ function Contact() {
             </div>
             <div className="form-group half-width">
               <input
+                name="phoneNumber"
                 type="tel"
                 id="phone"
                 placeholder="Phone number"
@@ -53,6 +86,7 @@ function Contact() {
           {/* Message Field */}
           <div className="form-group full-width">
             <textarea
+              name="message"
               id="message"
               placeholder="Type your message here..."
               rows="5"
@@ -66,6 +100,13 @@ function Contact() {
               Send Message
             </button>
           </div>
+          {/* Loading Spinner */}
+          {
+            loading ? <Loading />: null 
+          }
+          {success && <ContactSuccess onClose={() => setSuccess(false)} />}
+
+
         </form>
       </div>
     </section>
