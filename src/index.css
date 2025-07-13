@@ -1,0 +1,158 @@
+
+*
+{
+  font-family: "Lexend", sans-serif;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.about {
+    background: radial-gradient(circle, rgba(250,242,248,1) 0%, rgba(81,116,166,1) 100%);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    height: 97vh;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hero-grid
+{
+    display: grid;
+    grid-template-columns:1fr 300px ;
+}
+#glyzel-logo
+{
+    width: 100px;
+    
+}
+header
+{
+    align-items: center;
+}
+.about-me
+{
+  margin: 10px;
+  justify-items: center;
+}
+.about-me-container
+{
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 500px 400px;
+  gap: 100px;
+  justify-content: center;
+}
+.description
+{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.projects
+{
+  margin: 100px;
+  justify-items: center;
+}
+.projects-item-title
+{
+    text-align: center;
+}
+.projects-container
+{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.project-grid
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 100px;
+}
+.card-project
+{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card-body
+{
+    display: grid;
+    grid-template-rows:20px 90px 30px 40px;
+    gap: 10px;
+}
+.card-project:hover
+{       
+    cursor: pointer;
+     transform: translateY(5px);
+}
+.skills
+{
+    margin: 100px;
+  justify-items: center;
+}
+.card-title, card-text
+{
+    height: 3vh;
+    max-height: 5vh;
+}
+.card-technology
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.technology-items
+{
+    width: 20px;
+    height: 20px;
+}
+.skills img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+.skills img:hover {
+  transform: scale(1.1);
+}
+
+.skills h2 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+.research {
+  background: #f8f9fa;
+}
+
+.research h2,
+.research h3 {
+  font-weight: 600;
+}
+
+.research p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
