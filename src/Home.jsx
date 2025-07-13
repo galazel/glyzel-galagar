@@ -3,7 +3,7 @@ function Home() {
     <section className="home" id="home">
       <div className="container" id="home-container">
         {/* Header/Nav */}
-        <header className="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <header className="d-flex flex-wrap justify-content-center py-3 mb-4" id="home-header">
           <a
             href="#home"
             className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"
@@ -36,7 +36,7 @@ function Home() {
         </header>
 
         {/* Main Section */}
-        <div className="px-4 py-5 my-5 text-center">
+        <div className="text-center" id="home-main">
           <p>Hi! I am</p>
           <h1 className="display-5">Glyzel Galagar</h1>
           <div className="col-lg-20 mx-auto">
@@ -49,7 +49,7 @@ function Home() {
             </div>
 
             {/* Social Media Icons */}
-            <div className="d-grid gap-3 d-sm-flex justify-content-sm-center mt-4">
+            <div className="d-grid gap-3 d-sm-flex justify-content-sm-center mt-4" id="social-icons">
               <a
                 href="https://www.facebook.com/galagarglyzel"
                 target="_blank"

@@ -13,8 +13,8 @@ function About() {
             because of it I am now fully aware of what should I do in my life.
           </p>
         </div>
-        <div className="about-item">
-          <img src="/images/glyzel_profile.png" alt="my-profiile" />
+        <div className="about-item" >
+          <img id="profile-about" src="/images/glyzel_profile.png" alt="my-profile" />
         </div>
       </div>
     </section>

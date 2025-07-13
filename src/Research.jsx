@@ -78,41 +78,57 @@ function Research() {
             <div className="mt-5">
               <h3 className="mb-3">Authors</h3>
               <Stack direction="row" spacing={2}>
-                <Tooltip title="Nica Jane Taneo">
+
                   <Avatar
+                    data-bs-toggle="modal"
+                    data-bs-target="#authorName"
                     alt="Nica Jane Taneo"
                     src="/static/images/avatar/1.jpg"
                     sx={{ bgcolor: "primary.main" }}
+                    onClick={() => {
+                      document.querySelector(".author-name").textContent = "Nica Jane Taneo";
+                    }}
                   />
-                </Tooltip>
-                <Tooltip title="Akishae Labastida">
                   <Avatar
+                   data-bs-toggle="modal"
+                    data-bs-target="#authorName"
                     alt="Akishae Labastida"
                     src="/static/images/avatar/2.jpg"
                     sx={{ bgcolor: "secondary.main" }}
+                    onClick={() => {
+                      document.querySelector(".author-name").textContent = "Akishae Labastida";
+                    }}
                   />
-                </Tooltip>
-                <Tooltip title="Precious Anne Larayos">
                   <Avatar
+                   data-bs-toggle="modal"
+                    data-bs-target="#authorName"
                     alt="Precious Anne Larayos"
                     src="/static/images/avatar/3.jpg"
                     sx={{ bgcolor: "success.main" }}
+                    onClick={() => {
+                      document.querySelector(".author-name").textContent = "Precious Anne Larayos";
+                    }}
                   />
-                </Tooltip>
-                <Tooltip title="Seim Manago">
                   <Avatar
+                   data-bs-toggle="modal"
+                    data-bs-target="#authorName"
                     alt="Seim Manago"
                     src="/static/images/avatar/4.jpg"
                     sx={{ bgcolor: "warning.main" }}
+                    onClick={() => {
+                      document.querySelector(".author-name").textContent = "Seim Manago";
+                    }}
                   />
-                </Tooltip>
-                <Tooltip title="Glyzel Galagar">
                   <Avatar
+                    data-bs-toggle="modal"
+                    data-bs-target="#authorName"
                     alt="Glyzel Galagar"
                     src="/static/images/avatar/5.jpg"
                     sx={{ bgcolor: "error.main" }}
+                    onClick={() => {
+                      document.querySelector(".author-name").textContent = "Glyzel Galagar";
+                    }}
                   />
-                </Tooltip>
               </Stack>
             </div>
           </div>
@@ -147,6 +163,33 @@ function Research() {
                 className="w-100"
                 style={{ maxHeight: "90vh", objectFit: "contain" }}
               />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Modal for Images */}
+      <div
+        className="modal fade"
+        id="authorName"
+        tabIndex="-1"
+        aria-labelledby="introModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="introModalLabel">
+                Research Article
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body text-center">
+             <h2 className="author-name"></h2>
             </div>
           </div>
         </div>
