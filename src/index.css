@@ -229,71 +229,88 @@ button.btn-primary:hover {
 /* ✅ Responsive Media Queries */
 
 /* 📱 Small devices (phones) */
-@media (max-width: 400px) 
+@media (max-width: 480px) 
 {
   .home {
-    height: 100vh;
+    height: auto;
     width: 100%;
+    padding: 20px 10px;
+    text-align: center;
   }
-  #glyzel-logo
-  {
-    width: 200px;
+
+  #glyzel-logo {
+    width: 100px;
   }
-  header{
+
+  header {
     display: flex;
     flex-direction: column;
-  }
-  .nav-pills
-  {
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
     align-items: center;
   }
+
+  .nav-pills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  #home-main
-  {
+
+  #home-main {
     margin: 0;
     padding: 0;
   }
-  #social-icons
-  {
-    display: grid;
-    grid-template-columns: repeat(3, 30px);
-    gap: 10px;
+
+  #social-icons {
+    display: flex;
     justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
   }
+
   .about-me {
     width: 100%;
+    margin: 50px 0;
+    padding: 0 10px;
   }
-  
+
   .about-me-container {
-    width: 390px;
-    display: block;
-    padding: 10px;
-    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
   }
-  .about-item
-  {
-     padding: 10px; 
+
+  #profile-about {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
-  .description
-  {
+
+  .description {
     text-align: center;
-  
+    gap: 20px;
   }
-  #profile-about
-  {
-    width: 320px;
-  }
+
   .project-grid {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 30px;
+    padding: 20px;
   }
+
   .card-project {
     width: 100%;
+    padding: 10px;
+  }
+
+  .skills {
+    text-align: center;
   }
 
   .skills img {
@@ -309,7 +326,17 @@ button.btn-primary:hover {
   .full-width {
     width: 100%;
   }
+
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .card-title,
+  .card-text {
+    text-align: center;
+  }
 }
+
 
 /* 📱📱 Medium devices (tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
