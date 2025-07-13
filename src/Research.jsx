@@ -176,7 +176,7 @@ function Research() {
             <div className="modal-body">
               <video id="demoVideo" width="100%" controls>
                 <source
-                  src="src/assets/images/videos/chalkboard.mp4"
+                  src="/images/videos/chalkboard.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
