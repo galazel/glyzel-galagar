@@ -49,7 +49,7 @@ function Home() {
             </div>
 
             {/* Social Media Icons */}
-            <div className="d-grid gap-3 d-sm-flex justify-content-sm-center mt-4" id="social-icons">
+            <div className="d-sm-flex justify-content-sm-center mt-4" id="social-icons">
               <a
                 href="https://www.facebook.com/galagarglyzel"
                 target="_blank"
