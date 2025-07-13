@@ -9,37 +9,37 @@ function Skills() {
             <h2>Languages</h2>
             <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
               <img
-                src="/src/assets/images/html-5.png"
+                src="/images/html-5.png"
                 alt="HTML"
                 title="HTML"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/css-3.png"
+                src="/images/css-3.png"
                 alt="CSS"
                 title="CSS"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/js.png"
+                src="/images/js.png"
                 alt="JavaScript"
                 title="JavaScript"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/java.png"
+                src="/images/java.png"
                 alt="Java"
                 title="Java"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/c-sharp.png"
+                src="/images/c-sharp.png"
                 alt="C#"
                 title="C#"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/sql.png"
+                src="/images/sql.png"
                 alt="SQL"
                 title="SQL"
                 data-bs-toggle="tooltip"
@@ -52,25 +52,25 @@ function Skills() {
             <h2>Frameworks</h2>
             <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
               <img
-                src="/src/assets/images/bootstrap.png"
+                src="/images/bootstrap.png"
                 alt="Bootstrap"
                 title="Bootstrap"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/mui.png"
+                src="/images/mui.png"
                 alt="MUI"
                 title="MUI"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/react.png"
+                src="/images/react.png"
                 alt="React"
                 title="React.js"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/springboot.png"
+                src="/images/springboot.png"
                 alt="Spring Boot"
                 title="Spring Boot"
                 data-bs-toggle="tooltip"
@@ -83,25 +83,25 @@ function Skills() {
             <h2>Tools</h2>
             <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
               <img
-                src="/src/assets/images/intellj.png"
+                src="/images/intellj.png"
                 alt="IntelliJ"
                 title="IntelliJ IDEA"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/visual-studio.png"
+                src="/images/visual-studio.png"
                 alt="Visual Studio"
                 title="Visual Studio"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/visual-studio-code.png"
+                src="/images/visual-studio-code.png"
                 alt="VS Code"
                 title="Visual Studio Code"
                 data-bs-toggle="tooltip"
               />
               <img
-                src="/src/assets/images/postman.png"
+                src="/images/postman.png"
                 alt="Postman"
                 title="Postman"
                 data-bs-toggle="tooltip"

@@ -14,7 +14,7 @@ function About() {
           </p>
         </div>
         <div className="about-item">
-          <img src="/src/assets/images/glyzel_profile.png" alt="my-profiile" />
+          <img src="/images/glyzel_profile.png" alt="my-profiile" />
         </div>
       </div>
     </section>

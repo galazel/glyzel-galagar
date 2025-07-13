@@ -10,7 +10,7 @@ function Home() {
           >
             <span className="fs-4">
               <img
-                src="/src/assets/images/glyzel_logo.png"
+                src="/images/glyzel_logo.png"
                 alt="glyzel-logo"
                 id="glyzel-logo"
               />

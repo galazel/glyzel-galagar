@@ -34,7 +34,7 @@ function Research() {
         <div className="row justify-content-center align-items-center mb-5">
           <div className="col-md-5 mb-4">
             <img
-              src="src/assets/images/chalk1.jpg"
+              src="/images/chalk1.jpg"
               alt="Automated Chalkboard Eraser"
               className="img-fluid rounded shadow-lg"
             />
@@ -142,7 +142,7 @@ function Research() {
             </div>
             <div className="modal-body text-center">
               <img
-                src="src/assets/images/research_intro.png"
+                src="/images/research_intro.png"
                 alt="research-intro"
                 className="w-100"
                 style={{ maxHeight: "90vh", objectFit: "contain" }}
