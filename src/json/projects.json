@@ -19,5 +19,12 @@
         "description":"A windows application for voting new officers in Nursing Department",
         "technology":["/images/c-sharp.png","/images/sql.png"],
         "video":"/images/videos/voting_system.mp4"
+    },
+    {
+        "image":"/images/goto.png",
+        "title":"GOTO Movie",
+        "description":"A website for watching movies",
+        "technology":["/images/html-5.png","/images/css-3.png","/images/js.png,","/images/react.png"],
+        "video":"/images/videos/goto.mp4"
     }
 ]

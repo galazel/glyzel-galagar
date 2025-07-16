@@ -21,3 +21,4 @@ function About() {
   );
 }
 export default About;  
+//i really love this part of the code, it is so simple and clean whooo
